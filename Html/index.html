@@ -1,34 +1,460 @@
+
 <!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Imran</title>
+
+    <meta name="description" content="Het persoonlijke portfolio van Imran, Software Developer in opleiding.">
+
+    <title>Imran | Software Developer</title>
+
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="js/script.js" defer></script>
 </head>
+
 <body>
 
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">Over mij</a>
-            <a href="projects.html">Projects</a>
-            <a href="skills.html">Skills</a>
-            <a href="contact.html">Contact</a>
+    <!-- Achtergrond -->
+    <div class="background-glow"></div>
+
+    <!-- Navigatie -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+                Imran<span>.</span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                aria-label="Menu openen" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">Over mij</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projecten</a></li>
+                <li><a href="#contact" class="nav-link contact-nav">Contact</a></li>
+            </ul>
+
         </nav>
     </header>
 
     <main>
-        <section>
-            <h1>Hallo, ik ben Imran</h1>
-            <p>Welkom op mijn portfolio als Software Developer.</p>
+
+        <!-- HOME -->
+        <section class="hero section" id="home">
+
+            <div class="container hero-content">
+
+                <div class="hero-text reveal">
+
+                    <div class="availability">
+                        <span class="status-dot"></span>
+                        Software Development Student
+                    </div>
+
+                    <p class="eyebrow">WELKOM OP MIJN PORTFOLIO</p>
+
+                    <h1>
+                        Hey, ik ben <span class="gradient-text">Imran.</span>
+                        <br>
+                        Ik bouw digitale ervaringen.
+                    </h1>
+
+                    <p class="hero-description">
+                        Ik ben een Software Developer in opleiding met
+                        interesse in het bouwen van websites en applicaties.
+                        Ik blijf mezelf ontwikkelen en ontdek graag nieuwe
+                        technologieën.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="button button-primary">
+                            Bekijk mijn werk <span>↗</span>
+                        </a>
+
+                        <a href="#contact" class="button button-secondary">
+                            Neem contact op
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <a href="https://github.com/Imran-Mohamad"
+                           target="_blank" rel="noopener noreferrer">
+                            GitHub ↗
+                        </a>
+                        <span class="social-divider"></span>
+                        <a href="mailto:9028732@student.tcrmbo.nl">
+                            E-mail ↗
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="hero-visual reveal">
+
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+
+                    <div class="hero-avatar">
+                        <span>I</span>
+                    </div>
+
+                    <div class="floating-card card-top">
+                        <span class="floating-icon">{"</>"}</span>
+                        <div>
+                            <strong>Code</strong>
+                            <small>Build & Create</small>
+                        </div>
+                    </div>
+
+                    <div class="floating-card card-bottom">
+                        <span class="floating-icon">✦</span>
+                        <div>
+                            <strong>Always learning</strong>
+                            <small>Always improving</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <a href="#about" class="scroll-indicator">
+                <span></span>
+                Scroll om meer te ontdekken
+            </a>
+
         </section>
+
+
+        <!-- OVER MIJ -->
+        <section class="section about-section" id="about">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <p class="eyebrow">LEER MIJ KENNEN</p>
+                    <h2>Over <span class="gradient-text">mij</span></h2>
+                    <p>Een beetje meer over wie ik ben en wat mij motiveert.</p>
+                </div>
+
+                <div class="about-grid">
+
+                    <div class="about-main glass-card reveal">
+
+                        <div class="card-label">01 / OVER MIJ</div>
+
+                        <h3>Ik ben Imran, een developer in ontwikkeling.</h3>
+
+                        <p>
+                            Ik ben student Software Development en houd me
+                            bezig met het ontwikkelen van websites en
+                            applicaties. Tijdens mijn opleiding leer ik
+                            verschillende programmeertalen en technieken
+                            gebruiken.
+                        </p>
+
+                        <p>
+                            Ik werk met technologieën zoals HTML, CSS,
+                            JavaScript, PHP en Python. Ook leer ik werken
+                            met databases en tools zoals GitHub.
+                        </p>
+
+                        <p>
+                            Ik wil mijn vaardigheden blijven verbeteren,
+                            nieuwe dingen ontdekken en ervaring opdoen
+                            met echte softwareprojecten.
+                        </p>
+
+                    </div>
+
+                    <div class="about-side glass-card reveal">
+
+                        <div class="card-label">02 / MIJN FOCUS</div>
+
+                        <div class="focus-item">
+                            <span class="focus-icon">⌘</span>
+                            <div>
+                                <h4>Development</h4>
+                                <p>Websites en applicaties bouwen.</p>
+                            </div>
+                        </div>
+
+                        <div class="focus-item">
+                            <span class="focus-icon">✧</span>
+                            <div>
+                                <h4>Creativiteit</h4>
+                                <p>Nieuwe ideeën omzetten in projecten.</p>
+                            </div>
+                        </div>
+
+                        <div class="focus-item">
+                            <span class="focus-icon">↗</span>
+                            <div>
+                                <h4>Groei</h4>
+                                <p>Blijven leren en mezelf verbeteren.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS -->
+        <section class="section skills-section" id="skills">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <p class="eyebrow">MIJN TECHNISCHE KENNIS</p>
+                    <h2>Mijn <span class="gradient-text">skills</span></h2>
+                    <p>Technologieën waarmee ik werk tijdens mijn opleiding.</p>
+                </div>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card glass-card reveal">
+                        <div class="skill-icon">🌐</div>
+                        <h3>HTML</h3>
+                        <p>De structuur van websites bouwen.</p>
+                    </div>
+
+                    <div class="skill-card glass-card reveal">
+                        <div class="skill-icon">🎨</div>
+                        <h3>CSS</h3>
+                        <p>Websites vormgeven en responsive maken.</p>
+                    </div>
+
+                    <div class="skill-card glass-card reveal">
+                        <div class="skill-icon">⚡</div>
+                        <h3>JavaScript</h3>
+                        <p>Websites interactief maken.</p>
+                    </div>
+
+                    <div class="skill-card glass-card reveal">
+                        <div class="skill-icon">🐘</div>
+                        <h3>PHP</h3>
+                        <p>Werken aan de backend van applicaties.</p>
+                    </div>
+
+                    <div class="skill-card glass-card reveal">
+                        <div class="skill-icon">🐍</div>
+                        <h3>Python</h3>
+                        <p>Programmeren en logica ontwikkelen.</p>
+                    </div>
+
+                    <div class="skill-card glass-card reveal">
+                        <div class="skill-icon">🗄️</div>
+                        <h3>MySQL</h3>
+                        <p>Gegevens opslaan en beheren.</p>
+                    </div>
+
+                    <div class="skill-card glass-card reveal">
+                        <div class="skill-icon">🐙</div>
+                        <h3>GitHub</h3>
+                        <p>Code beheren en projecten bijhouden.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTEN -->
+        <section class="section projects-section" id="projects">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <p class="eyebrow">WAT IK HEB GEMAAKT</p>
+                    <h2>Mijn <span class="gradient-text">projecten</span></h2>
+                    <p>Een selectie van projecten waaraan ik heb gewerkt.</p>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- Project 1 -->
+                    <article class="project-card glass-card reveal">
+
+                        <div class="project-image arcade-image">
+                            <div class="arcade-screen">
+                                <span class="arcade-player">▲</span>
+                                <span class="arcade-enemy enemy-one">◆</span>
+                                <span class="arcade-enemy enemy-two">◆</span>
+                                <span class="arcade-bullet">•</span>
+                                <span class="arcade-score">SCORE: 100</span>
+                            </div>
+                        </div>
+
+                        <div class="project-info">
+
+                            <div class="project-top">
+                                <span class="project-type">PYTHON GAME</span>
+                                <span class="project-number">01</span>
+                            </div>
+
+                            <h3>Arcade Dodge</h3>
+
+                            <p>
+                                Een gameproject waarin de speler vijanden
+                                moet ontwijken en neerschieten. Hierbij
+                                werk ik met Python, Pygame en
+                                objectgeoriënteerd programmeren.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Pygame</span>
+                                <span>OOP</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 2 -->
+                    <article class="project-card glass-card reveal">
+
+                        <div class="project-image portfolio-image">
+                            <div class="mini-browser">
+                                <div class="browser-dots">
+                                    <i></i><i></i><i></i>
+                                </div>
+
+                                <div class="mini-content">
+                                    <div class="mini-line"></div>
+                                    <div class="mini-line short"></div>
+                                    <div class="mini-boxes">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-info">
+
+                            <div class="project-top">
+                                <span class="project-type">WEB DEVELOPMENT</span>
+                                <span class="project-number">02</span>
+                            </div>
+
+                            <h3>Portfolio Website</h3>
+
+                            <p>
+                                Mijn persoonlijke portfolio waarin ik
+                                mezelf, mijn technische vaardigheden
+                                en mijn projecten presenteer.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section class="section contact-section" id="contact">
+
+            <div class="container">
+
+                <div class="contact-box glass-card reveal">
+
+                    <p class="eyebrow">LATEN WE CONTACT MAKEN</p>
+
+                    <h2>
+                        Heb je een idee?
+                        <br>
+                        <span class="gradient-text">Laten we praten.</span>
+                    </h2>
+
+                    <p>
+                        Heb je een vraag, wil je samenwerken of wil je
+                        meer weten over mijn projecten? Stuur me gerust
+                        een bericht.
+                    </p>
+
+                    <a href="mailto:9028732@student.tcrmbo.nl"
+                       class="button button-primary">
+                        Stuur mij een e-mail <span>↗</span>
+                    </a>
+
+                    <div class="contact-details">
+
+                        <div>
+                            <small>EMAIL</small>
+                            <a href="mailto:9028732@student.tcrmbo.nl">
+                                9028732@student.tcrmbo.nl
+                            </a>
+                        </div>
+
+                        <div>
+                            <small>GITHUB</small>
+                            <a href="https://github.com/Imran-Mohamad"
+                               target="_blank" rel="noopener noreferrer">
+                                github.com/Imran-Mohamad ↗
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
 
-    <footer>
-        <p>&copy; 2026 Imran</p>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <a href="#home" class="logo">Imran<span>.</span></a>
+
+            <p>Ontworpen en gebouwd door Imran.</p>
+
+            <p>© <span id="year"></span> Alle rechten voorbehouden.</p>
+
+        </div>
+
     </footer>
 
-    <script src="js/script.js"></script>
+    <a href="#home" class="back-to-top" id="back-to-top"
+       aria-label="Terug naar boven">↑</a>
+
 </body>
 </html>
